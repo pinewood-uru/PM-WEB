@@ -1,0 +1,106 @@
+:root {
+    --primary: #CF1E2A;  
+    --white: #FDFDFF;  
+    --black: #1E1E1E;  
+    --danger: #FD8E39;  
+    --succes:#3DC13C;
+    --warning:#F3BB1B;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* GENERAL */
+
+#section1{
+    background-image: url("/img/pexels-jakubzerdzicki-18509457.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    }
+
+    h3{
+        color: var(--primary) !important    ;
+    }
+
+
+/* CLASES */
+
+.logonav{
+    width: 50px;
+    height: auto;
+}
+
+/* MOBILE --------------------------------------------- */
+
+@media (max-width: 390px) {
+
+    /* FONTS */
+    h1{
+        font-size:24px;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size:20px;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 400px;
+    }   
+    
+
+    #section1{
+        min-height: 400px;
+    }
+
+    #section1 li>a{
+        color: var(--primary);
+    }
+    
+    }
+
+    
+
+/* DESKTOP -------------------------------------------- */
+
+@media (min-width: 390px) and (max-width: 1440) {
+    h1{
+        font-size:36px;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size:27px;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400px;
+    }   
+
+    #section1{
+        min-width: 800px;
+    }
+    
+  }
