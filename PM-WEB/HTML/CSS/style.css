@@ -46,6 +46,10 @@
         ;
   }
 
+  input{
+    text-align: start !important;
+  }
+
   h1 {
     font-size: 30px !important;
     font-weight: 600 !important;
