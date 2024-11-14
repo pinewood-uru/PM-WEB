@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+    <main class="d-flex flex-column gap-2 justify-content-between min-vh-100  M-0">
     <!-- NAV -->
     <nav class="navbar sticky-top bg-danger rounded-bottom">
         <div class="container-fluid">
@@ -61,71 +61,49 @@
   
 
     <main>
-        <div class="col-md-7 col-lg-8 px-2">
-            <h4 class="mb-3 text-dark fw-bold pt-2">Solicitud de Proyecto</h4>
+        <div class="col-md-7 col-lg-8 p-2 shadowpm rounded bg-dark mx-3 gap-2">
+            <h4 class="mb-3 text-white fw-bold pt-2">Registro</h4>
             <form class="needs-validation pt-1" novalidate="">
                 <div class="row g-3">
                     
-                    <div class="col-12 align-items-start d-flex flex-column">
-                        <label for="razonsocial" class="form-label text-danger fw-bold">Razón Social</label>
-                        <div class="input-group has-validation">
-                            <input type="text" class="form-control " id="razonsocial" placeholder="Razón social"
-                                required="">
-                            <div class="invalid-feedback">
-                                Razón social es requerido
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 align-items-start d-flex flex-column">
-                        <label for="rut" class="form-label text-danger fw-bold">RUT</label>
-                        <input type="text" class="form-control " id="rut" placeholder="" required="">
+                    <div class="col-sm-6 align-items-start d-flex flex-column">
+                        <label for="nombre" class="form-label text-white fw-bold">Nombre</label>
+                        <input type="text" class="form-control " id="nombre" placeholder="Juan" value="" required="">
                         <div class="invalid-feedback">
-                            Número de Rut es requerido
+                            Nombre es requerido
                         </div>
                     </div>
 
-
-                    <div class="col-12 align-items-start d-flex flex-column">
-                        <label for="direccion" class="form-label text-danger fw-bold">Dirección</label>
-                        <input type="text" class="form-control " id="direccion" placeholder="18 de Julio 1234" required="">
+                    <div class="col-sm-6 align-items-start d-flex flex-column">
+                        <label for="apellido" class="form-label text-white fw-bold">Apellido</label>
+                        <input type="text" class="form-control " id="apellido" placeholder="Perez" value="" required="">
                         <div class="invalid-feedback">
-                            Dirección es requrida
+                            Apellido es requerido
                         </div>
                     </div>
 
+
                     <div class="col-12 align-items-start d-flex flex-column">
-                        <label for="padron" class="form-label text-danger fw-bold">Padrón</label>
-                        <input type="text" class="form-control " id="padron" placeholder="1234" required="">
+                        <label for="email" class="form-label text-white fw-bold">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="juan@perez.com">
                         <div class="invalid-feedback">
-                            Ingresar padrón
+                            Email es requerido
                         </div>
                     </div>
 
-                    <div class="col-12 align-items-start d-flex flex-column">
-                        <label for="seccional" class="form-label text-danger fw-bold">Seccional<span class="text-body-secondary"> (Opcional)</span></label>
-                        <input type="text" class="form-control" id="seccional" placeholder="1">
+                    <div class="col-12 align-items-start d-flex flex-column text-white fw-bold">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
                       </div>
-
-                      <div class="col-12 align-items-start d-flex flex-column">
-                        <label for="barrio" class="form-label text-danger fw-bold">Barrio<span class="text-body-secondary"> (Opcional)</span></label>
-                        <input type="text" class="form-control" id="barrio" placeholder="Centro">
-                      </div>
-
                 </div>
 
-                
-
-                <div class="form-check py-3">
-                    <input type="checkbox" class="form-check-input text-danger fw-bold" id="guardar-info">
-                    <label class="form-check-label " for="guardar-info">Guardar mis datos para el futuro</label>
-                </div>
-                
-                <button class="w-75 btn btn-dark btn-md" type="submit">Continuar</button>
+                <button class="w-75 btn btn-danger btn-md mt-4" type="submit">Continuar</button>
             </form>
+
+            <p class="my-2 text-white">Ya tienes cuenta? <a href="login.html" class="text-white">Iniciar Sesión</a></p>
         </div>
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
+    <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
         <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
 
         <a href="index.html"
@@ -133,7 +111,7 @@
             <img src="/img/PMfinal.png" class="logonav" alt="logo">
         </a>
     </footer>
-
+</main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
