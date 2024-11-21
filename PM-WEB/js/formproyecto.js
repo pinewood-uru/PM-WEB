@@ -5,14 +5,14 @@ const btnsendproyecto = document.getElementById("form-proyecto-submit");
 
 btnsendproyecto.addEventListener("click", ()=>{
 
-const razonsocialInput = document.getElementById("razonsocial");
-const rutInput = document.getElementById("rut");
-const direccionInput = document.getElementById("direccion");
-const padronInput = document.getElementById("padron");
-const seccionalInput = document.getElementById("seccional");
-const barrioInput = document.getElementById("barrio");
+const razonsocialInput = obtenerValorInput("razonsocial");
+const rutInput = obtenerValorInput("rut");
+const direccionInput = obtenerValorInput("direccion");
+const padronInput = obtenerValorInput("padron");
+const seccionalInput = obtenerValorInput("seccional");
+const barrioInput = obtenerValorInput("barrio");
 
-if(!razonsocialInput || !rutInput || !direccionInput || !padronInput || !seccionalInput || !barrioInput || !guardarInfoCheckbox ||){
+if(!razonsocialInput || !rutInput || !direccionInput || !padronInput || !seccionalInput || !barrioInput){
     imprimir("form-proyecto-error", "Completar todos los campos");
     return;
 }
