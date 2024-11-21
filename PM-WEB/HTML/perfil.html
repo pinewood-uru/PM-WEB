@@ -23,7 +23,7 @@
     <!-- NAV -->
     <nav class="navbar sticky-top bg-danger rounded-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand rounded bg-white" href="#"><img src="/img/PMfinal.png" class="logonav"
+            <a class="navbar-brand rounded bg-white" href="index.html"><img src="/img/PMfinal.png" class="logonav"
                     alt="logo"></a>
             <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -51,15 +51,12 @@
                                     </path>
                                 </svg>
                             </button>
-                            <a class="nav-link" href="#">Iniciar Sesión / Registro</a>
+                            <a class="nav-link" href="perfil.html">Perfil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
-                        </li>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -67,18 +64,13 @@
     </nav>
 
 
-    <main>
+    <main class="d-flex flex-column gap-2 justify-content-start min-vh-100"> 
+
+        <!-- PROYECTOS -->
         <section id="perfil">
             <div class="container-fluid d-flex flex-wrap no-wrap my-2 gap-2 align-items-end">
                 <h3 class="m-0">Mis Proyectos</h3>
-                <button type="button" class="btn btn-danger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-pen"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z">
-                        </path>
-                    </svg>
-                </button>
+                
             </div>
 
 
@@ -106,14 +98,26 @@
                             <th scope="row">Finalización</th>
                             <td class="fw-bold">7 días</td>
                         </tr>
+                        <tr><th><button type="button" class="btn btn-dark" id="btn-editar">
+                            Editar Proyecto
+                        </button></th><td>
+                            <button type="button" class="btn btn-danger" id="btn-borrar">
+                                Borrar Proyecto
+                            </button></td>
+                        </tr>
 
                     </tbody>
                 </table>
             </div>
-        </section>
+            <button class="w-50 btn btn-dark btn-md mt-4" type="button" id="logout" value="logout">Cerrar Sesión</button></section>
+
+        <!-- LOGOUT -->
+       
 
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger sticky-bottom">
+
+    <!-- FOOTER -->
+    <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
         <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
 
         <a href="index.html"
@@ -122,9 +126,13 @@
         </a>
     </footer>
 
-</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script><script src="../js/proyectos.js" type="module"></script>
+    <script src="../js/logoutadm.js" type="module"></script>
+    
+
+</body>
+
 
 </html>
