@@ -11,11 +11,9 @@ const direccionInput = document.getElementById("direccion");
 const padronInput = document.getElementById("padron");
 const seccionalInput = document.getElementById("seccional");
 const barrioInput = document.getElementById("barrio");
-const guardarInfoCheckbox = document.getElementById("guardar-info");
-const formSubmitButton = document.getElementById("form-proyecto-submit");
 
 if(!razonsocialInput || !rutInput || !direccionInput || !padronInput || !seccionalInput || !barrioInput || !guardarInfoCheckbox ||){
-    imprimir("form-register-error", "Completar todos los campos");
+    imprimir("form-proyecto-error", "Completar todos los campos");
     return;
 }
 
@@ -26,5 +24,16 @@ const body = JSON.stringify({
     padron,
     seccional,
     barrio,
-    
-})
+
+});
+
+Request.register(body)
+    .then(()=> {
+        document.location.replace("perfil.html");
+    }).then(() => {
+        alert("Se ha ingresado con exito");
+    })
+    .catch((error) => {
+        imprimir("form-proyecto-error", error);
+    });
+});
