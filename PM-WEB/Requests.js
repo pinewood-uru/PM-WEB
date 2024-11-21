@@ -6,6 +6,9 @@ const headers = {
   "Content-Type": "application/json",
 };
 
+  const token = sessionStorage.getItem("session") 
+  if(token)headers.authorization=token
+
 const procesarRespuesta = (res) => {
     return res.json().then((data) => {
       if (data.error) {
