@@ -72,7 +72,17 @@ static getproyectoById(id) {
     .catch(manejarErrores)
 }
 
+// POST PROYECTO
+
+static postproyecto(body) {
+  return fetch(obtenerUrl("proyecto"), { method: "POST", headers, body })
+    .then(procesarRespuesta)
+    .catch(manejarErrores);
 }
+
+}
+
+
 
 
 

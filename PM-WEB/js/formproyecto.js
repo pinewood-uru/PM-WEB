@@ -10,7 +10,7 @@ console.log(idproyecto);
 if (idproyecto != undefined) {
     Request.getproyectoById(idproyecto)
     .then((data) => {
-        const { razonsocial, rut, direccion, padron, seccional, barrio, date } = data;
+        const { razonsocial, rut, direccion, padron, seccional, barrio} = data;
         console.log(data)
         document.querySelector("#razonsocial").value = razonsocial;
         document.querySelector("#rut").value = rut;
@@ -24,24 +24,22 @@ if (idproyecto != undefined) {
     });
 }
 
-const btnsendproyecto = document.getElementById("form-proyecto-submit");
+document.getElementById("form-proyecto-submit").addEventListener("click", ()=>{
 
-btnsendproyecto.addEventListener("click", ()=>{
+const razonsocial= obtenerValorInput("razonsocial");
+const rut= obtenerValorInput("rut");
+const direccion= obtenerValorInput("direccion");
+const padron= obtenerValorInput("padron");
+const seccional= obtenerValorInput("seccional");
+const barrio= obtenerValorInput("barrio");
 
-const razonsocialInput = obtenerValorInput("razonsocial");
-const rutInput = obtenerValorInput("rut");
-const direccionInput = obtenerValorInput("direccion");
-const padronInput = obtenerValorInput("padron");
-const seccionalInput = obtenerValorInput("seccional");
-const barrioInput = obtenerValorInput("barrio");
-
-if(!razonsocialInput || !rutInput || !direccionInput || !padronInput || !seccionalInput || !barrioInput){
+if(!razonsocial|| !rut|| !direccion|| !padron|| !seccional|| !barrio){
     imprimir("form-proyecto-error", "Completar todos los campos");
     return;
 }
 
 const body = JSON.stringify({
-    razonsocioal,
+    razonsocial,
     rut,
     direccion,
     padron,
@@ -50,7 +48,7 @@ const body = JSON.stringify({
 
 });
 
-Request.register(body)
+Request.postproyecto(body)
     .then(()=> {
         document.location.replace("perfil.html");
     }).then(() => {
