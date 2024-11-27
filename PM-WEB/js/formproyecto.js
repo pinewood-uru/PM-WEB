@@ -1,5 +1,28 @@
 import { Request } from "../Requests.js";
-import { imprimir, obtenerValorInput } from "../utils/utils.js";
+import { imprimir, obtenerValorInput, validarSesion } from "../utils/utils.js";
+
+validarSesion();
+
+const params = new URLSearchParams(window.location.search);
+const idproyecto = params.get("id");
+
+console.log(idproyecto);
+if (idproyecto != undefined) {
+    Request.getproyectoById(idproyecto)
+    .then((data) => {
+        const { razonsocial, rut, direccion, padron, seccional, barrio, date } = data;
+        console.log(data)
+        document.querySelector("#razonsocial").value = razonsocial;
+        document.querySelector("#rut").value = rut;
+        document.querySelector("#direccion").value = direccion;
+        document.querySelector("#padron").value = padron;
+        document.querySelector("#seccional").value = seccional;
+        document.querySelector("#barrio").value = barrio;
+    })
+    .catch((error) => {
+        imprimir("nuevo-proyecto-error", error);
+    });
+}
 
 const btnsendproyecto = document.getElementById("form-proyecto-submit");
 

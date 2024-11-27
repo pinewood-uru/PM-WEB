@@ -66,4 +66,13 @@ export class Request {
       .catch(manejarErrores)
 }
 
+static getproyectoById(id) {
+  return fetch(obtenerUrl(`proyecto/${id}`), { headers })
+    .then(procesarRespuesta)
+    .catch(manejarErrores)
 }
+
+}
+
+
+
