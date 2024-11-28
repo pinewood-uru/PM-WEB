@@ -47,7 +47,7 @@ const body = JSON.stringify({
     barrio,
 
 });
-
+idproyecto != undefined ? Request.modificarproyecto(idproyecto, body) :
 Request.postproyecto(body)
     .then(()=> {
         document.location.replace("perfil.html");
