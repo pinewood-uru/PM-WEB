@@ -52,7 +52,7 @@ imprimirProyectos() {
                         <td class="fw-bold">${this.edt}</td>
                     </tr>
                     <tr>
-                        <th><button type="button" class="btn btn-dark btn-editar" id="btn-editar" data-id="${this.id}">
+                        <th><button type="button" class="btn btn-dark btn-modificar" id="btn-modificar" data-id="${this.id}">
                                 Editar Proyecto
                             </button></th>
                         <td>

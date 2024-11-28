@@ -86,6 +86,15 @@ static deleteProyecto(id) {
   return fetch(obtenerUrl(`proyecto/${id}`), { method: "DELETE", headers })
 }
 
+// MODIFICAR PROYECTO
+
+
+static modificarproyecto(id, body) {
+  return fetch(obtenerUrl(`proyecto/${id}`), { method: "PUT", headers, body })
+  .then(procesarRespuesta)
+  .catch(manejarErrores);
+}
+
 }
 
 

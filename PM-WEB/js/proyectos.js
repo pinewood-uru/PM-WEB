@@ -15,7 +15,7 @@ const listado = data.map((proyecto) =>
         proyecto.padron,
         proyecto.estado,
         proyecto.edt
-    ).imprimirProyectos());
+    ).imprimirProyectos()).join("");
     
     imprimir("accordionFlushExample", `<div class="accordion accordion-flush" id="accordionFlushExample">${listado}</div>`)
 
@@ -36,7 +36,17 @@ document.addEventListener('click', (event) => {
             
         }).catch(mostrarError);
     }
-});
+})
+
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('btn-modificar')) {
+        const id = event.target.getAttribute('data-id');
+        Request.modificarproyecto(id).then(() => {
+            
+            document.location.replace("modificarproyecto.html?id=" + id);
+            // mostrarlistaClientes()
+        }).catch(mostrarError);
+    }});
 
 // TABLA
 

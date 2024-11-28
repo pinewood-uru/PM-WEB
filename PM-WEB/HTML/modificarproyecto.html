@@ -106,6 +106,28 @@
             </div>
           </div>
 
+          <div class="form-floating">
+            <select class="form-select" id="selectestado" aria-label="Floating label select example">
+              <option selected value="recibido">Recibido</option>
+              <option value="asesorando">Asesorando</option>
+              <option value="enviado">Enviado</option>
+              <option value="espera">En spera</option>
+            </select>
+            <label for="selectestado">Seleccionar Estado</label>
+          </div>
+
+          <div class="form-floating">
+            <select class="form-select" id="edt" aria-label="Floating label select example">
+              <option selected value="-">-</option>
+              <option value="15">15 días</option>
+              <option value="10">10 días</option>
+              <option value="5">5 días</option>
+              <option value="2">2 días</option>
+
+            </select>
+            <label for="edt">Seleccionar EDT</label>
+          </div>
+
         </div>
 
         <button class="w-75 btn btn-dark btn-md my-3" type="button" id="form-proyecto-submit"
