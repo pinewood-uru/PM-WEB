@@ -52,11 +52,11 @@ imprimirProyectos() {
                         <td class="fw-bold">${this.edt}</td>
                     </tr>
                     <tr>
-                        <th><button type="button" class="btn btn-dark" id="btn-editar">
+                        <th><button type="button" class="btn btn-dark btn-editar" id="btn-editar" data-id="${this.id}">
                                 Editar Proyecto
                             </button></th>
                         <td>
-                            <button type="button" class="btn btn-danger" id="btn-borrar">
+                            <button type="button" class="btn btn-danger btn-eliminar" id="btn-borrar" data-id="${this.id}">
                                 Borrar Proyecto
                             </button>
                         </td>
