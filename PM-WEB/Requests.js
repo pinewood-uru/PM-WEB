@@ -80,7 +80,17 @@ static postproyecto(body) {
     .catch(manejarErrores);
 }
 
+// DELETE PROYECTO
+
+static deleteProyecto(id) {
+  return fetch(obtenerUrl(`proyecto/${id}`), { method: "DELETE", headers })
 }
+
+}
+
+
+
+
 
 
 
