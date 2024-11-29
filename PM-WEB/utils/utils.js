@@ -1,7 +1,8 @@
 import { Request } from "../Requests.js";
 
 export const obtenerValorInput = (idInput) =>
-  document.getElementById(idInput).value;
+  // ? condicional 
+  document.getElementById(idInput)?.value;
 
 export const modificarValorInput = (idInput, value) => {
   // Verificar la sintaxis.
@@ -9,6 +10,7 @@ export const modificarValorInput = (idInput, value) => {
 }
 
 export const imprimir = (elemento, contenido) => {
+  console.log(elemento, contenido);
     document.querySelector(`#${elemento}`).innerHTML = contenido;
   };
 

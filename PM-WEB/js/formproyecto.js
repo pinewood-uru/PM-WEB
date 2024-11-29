@@ -10,14 +10,16 @@ console.log(idproyecto);
 if (idproyecto != undefined) {
     Request.getproyectoById(idproyecto)
     .then((data) => {
-        const { razonsocial, rut, direccion, padron, seccional, barrio} = data;
+        const { razonsocial, rut, direccion, padron, estado, edt} = data;
         console.log(data)
         document.querySelector("#razonsocial").value = razonsocial;
         document.querySelector("#rut").value = rut;
         document.querySelector("#direccion").value = direccion;
         document.querySelector("#padron").value = padron;
-        document.querySelector("#seccional").value = seccional;
-        document.querySelector("#barrio").value = barrio;
+        document.querySelector("#estado").value = estado;
+        document.querySelector("#edt").value = edt;
+
+        
     })
     .catch((error) => {
         imprimir("nuevo-proyecto-error", error);
@@ -30,10 +32,11 @@ const razonsocial= obtenerValorInput("razonsocial");
 const rut= obtenerValorInput("rut");
 const direccion= obtenerValorInput("direccion");
 const padron= obtenerValorInput("padron");
-const seccional= obtenerValorInput("seccional");
-const barrio= obtenerValorInput("barrio");
+const estado= obtenerValorInput("estado");
+const edt= obtenerValorInput("edt");
 
-if(!razonsocial|| !rut|| !direccion|| !padron|| !seccional|| !barrio){
+
+if(!razonsocial|| !rut|| !direccion|| !padron){
     imprimir("form-proyecto-error", "Completar todos los campos");
     return;
 }
@@ -43,11 +46,18 @@ const body = JSON.stringify({
     rut,
     direccion,
     padron,
-    seccional,
-    barrio,
+    estado,
+    edt
 
 });
-idproyecto != undefined ? Request.modificarproyecto(idproyecto, body) :
+idproyecto ? Request.modificarproyecto(idproyecto, body).then(()=> {
+    document.location.replace("perfil.html");
+}).then(() => {
+    alert("Se ha ingresado con exito");
+})
+.catch((error) => {
+    imprimir("form-proyecto-error", error);
+}) :
 Request.postproyecto(body)
     .then(()=> {
         document.location.replace("perfil.html");

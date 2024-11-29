@@ -45,7 +45,7 @@ imprimirProyectos() {
                     </tr>
                     <tr>
                         <th scope="row">Estado</th>
-                        <td class="fw-bold text-success">${this.estado}</td>
+                        <td class="fw-bold">${this.estado}</td>
                     </tr>
                     <tr>
                         <th scope="row">Finalización</th>
