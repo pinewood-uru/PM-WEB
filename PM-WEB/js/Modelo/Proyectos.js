@@ -6,6 +6,7 @@ export default class Proyecto {
     padron;
     estado;
     edt;
+    token;
 
     constructor(id, razonsocial, rut, direccion, padron, estado, edt) {
         this.id = id;
@@ -15,7 +16,9 @@ export default class Proyecto {
         this.padron = padron;
         this.estado = estado;
         this.edt = edt;
+        this.token = token;
     }
+
 imprimirProyectos() {
     return `  <div class="accordion-item">
     <h3 class="accordion-header">
@@ -67,5 +70,11 @@ imprimirProyectos() {
         </div>
     </div>
 </div>`
+}
+
+imprimirProyectosbyID() {
+    return `  `
 }}
+
+
 
