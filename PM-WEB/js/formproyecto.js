@@ -10,7 +10,7 @@ console.log(idproyecto);
 if (idproyecto != undefined) {
     Request.getproyectoById(idproyecto)
     .then((data) => {
-        const { razonsocial, rut, direccion, padron, estado, edt} = data;
+        const { razonsocial, rut, direccion, padron, estado, edt, token} = data;
         console.log(data)
         document.querySelector("#razonsocial").value = razonsocial;
         document.querySelector("#rut").value = rut;
@@ -18,6 +18,7 @@ if (idproyecto != undefined) {
         document.querySelector("#padron").value = padron;
         document.querySelector("#estado").value = estado;
         document.querySelector("#edt").value = edt;
+        document.querySelector("#token").value = token;
 
         
     })
@@ -25,6 +26,12 @@ if (idproyecto != undefined) {
         imprimir("nuevo-proyecto-error", error);
     });
 }
+
+// ALEATORIO
+
+// generarTokenAleatorio() {
+//     return Math.random().toString(16).substr(2, 8);
+// }
 
 document.getElementById("form-proyecto-submit").addEventListener("click", ()=>{
 
@@ -34,6 +41,7 @@ const direccion= obtenerValorInput("direccion");
 const padron= obtenerValorInput("padron");
 const estado= obtenerValorInput("estado");
 const edt= obtenerValorInput("edt");
+const token= obtenerValorInput("token");
 
 
 if(!razonsocial|| !rut|| !direccion|| !padron){
@@ -47,7 +55,8 @@ const body = JSON.stringify({
     direccion,
     padron,
     estado,
-    edt
+    edt,
+    token,
 
 });
 idproyecto ? Request.modificarproyecto(idproyecto, body).then(()=> {

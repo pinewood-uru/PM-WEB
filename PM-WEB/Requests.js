@@ -66,6 +66,14 @@ export class Request {
       .catch(manejarErrores)
 }
 
+// GET PROYECTO BY TOKEN
+
+static getproyectobytoken(token) {
+  return fetch(obtenerUrl(`proyecto/${token}`), { headers })
+    .then(procesarRespuesta)
+    .catch(manejarErrores)
+}
+
 static getproyectoById(id) {
   return fetch(obtenerUrl(`proyecto/${id}`), { headers })
     .then(procesarRespuesta)

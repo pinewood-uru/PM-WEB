@@ -55,7 +55,7 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="buscarproyecto.html"> Buscar Proyecto</a>
             </li>
             </li>
           </ul>
@@ -67,14 +67,14 @@
   <main class="d-flex flex-column gap-2 justify-content-start min-vh-100">
     <div class="col-md-7 col-lg-8 px-2">
       <div id="form-proyecto-error"></div>
-      <h4 class="mb-3 text-dark fw-bold pt-2">Solicitud de Proyecto</h4>
+      <h4 class="mb-3 text-dark fw-bold pt-2">Buscador de Proyecto</h4>
       <form class="needs-validation pt-1" novalidate="">
         <div class="row g-3">
 
           <div class="col-12 align-items-start d-flex flex-column">
-            <label for="id" class="form-label text-danger fw-bold">Token</label>
+            <label for="input-filtro-token" class="form-label text-danger fw-bold">Token</label>
             <div class="input-group has-validation">
-              <input type="text" class="form-control " id="id" placeholder="Token" required="">
+              <input type="text" class="form-control " id="input-filtro-token" placeholder="Token" required="">
               <div class="invalid-feedback">
                 Token es requerido
               </div>
@@ -83,10 +83,16 @@
 
         </div>
 
-        <button class="w-75 btn btn-dark btn-md my-3" type="button" id="form-proyecto-submit"
-          value="form-proyecto-submit">Continuar</button>
+        <button class="w-75 btn btn-dark btn-md my-3" type="button" id="form-filtro-submit"
+          value="form-filtro-submit">Buscar</button>
       </form>
     </div>
+    <!-- SECTION TABLE PROYECTOS -->
+    <section>
+      <div id="proyectosbytoken">
+        
+      </div>
+    </section>
   </main>
   <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
     <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
@@ -96,7 +102,7 @@
       <img src="/img/PMfinal.png" class="logonav" alt="logo">
     </a>
   </footer>
-  <script src="../js/formproyecto.js" type="module"></script>
+  <script src="../js/filtroproyecto.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
