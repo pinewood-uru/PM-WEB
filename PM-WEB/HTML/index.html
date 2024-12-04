@@ -20,13 +20,13 @@
 
 <main>
   <!-- SECCION 1 -->
-  <section id="section1" class="gap-2 bg-light">  
+  <section id="section1" class="gap-2 bg-danger">  
 
     <!-- NAV  -->
      
     <nav class="navbar sticky-top bg-light rounded-bottom w-100">
       <div class="container-fluid">
-        <a class="navbar-brand rounded bg-white" href="#"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
+        <a class="navbar-brand rounded bg-white text-danger" href="#"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
         <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +35,7 @@
 
         <div class="offcanvas offcanvas-end bg bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">PM - Contra incendio</h3>
+            <h3 class="offcanvas-title text-danger" id="offcanvasNavbarLabel">PM - Contra incendio</h3>
             <button type="button" class="btn-close btn-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -64,12 +64,12 @@
 
     <!-- BANNER -->
 
-    <section id="banner" class="container-fluid gap-2 bg-danger gap-2 py-2 align-items-center">
+    <section id="banner" class="container-fluid gap-2 bg-danger gap-2 py-2 d-flex flex-columnx   justify-content-center align-items-center flex-wrap">
       <h1 class="text-white my-2">Gestión <br>
         Proyecto <br>
         Ejecución</h1>
-        <h3>Realizamos tu proyecto a medida</h3>
-        <p class="text-dark">Soluciones contra incendio a tu medida.</p>
+        <h3 class="text-white m-1">Realizamos tu proyecto a medida</h3>
+        <p class="text-white m-1">Soluciones contra incendio a tu medida.</p>
         <a href="solicitudform.html" class="btn btn-light text-danger rounded p-2">Solicitar Asesoramiento</a>
     </section>
         
@@ -78,30 +78,30 @@
   <!-- SECTION2 -->
   <section id="section2" class="container-fluid d-flex flex-column gap-2 py-2 align-items-center bg-light">
 
-    <h2 class="text-dark">Solicita tu proyecto!!!</h2>
+    <h2 class="text-white">Solicita tu proyecto!!!</h2>
 
-    <div class="md-col-4 bg-danger my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
+    <div class="md-col-4 bg-danger my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm ctn-pto">
       <h3 class="text-white">Proyecto Técnico</h3>
-      <p>Proyecto mayores a 750m2</p>
-      <button type="button" class="btn btn-light btn-sm">Solicitar Proyecto</button>
+      <p class="text-light">Proyecto mayores a 750m2</p>
+      <button type="button" class="btn btn-light btn-sm text-danger">Solicitar Proyecto</button>
     </div>
 
-    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
-      <h3>Proyecto Técnico Certificación</h3>
-      <p>Proyecto menores a 750m2</p>
-      <button type="button" class="btn btn-secondary btn-sm">Solicitar Proyecto</button>
+    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm ctn-pto">
+      <h3 class="text-danger">Proyecto Técnico Certificación</h3>
+      <p class="text-danger">Proyecto menores a 750m2</p>
+      <button type="button" class="btn btn-danger btn-sm">Solicitar Proyecto</button>
     </div>
 
-    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
-      <h3>Plan Gradual</h3>
-      <p>Extiende tu proyecto</p>
-      <button type="button" class="btn btn-secondary btn-sm">Solicitar Proyecto Gradual</button>
+    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm ctn-pto">
+      <h3 class="text-danger">Plan Gradual</h3>
+      <p class="text-danger">Extiende tu proyecto</p>
+      <button type="button" class="btn btn-danger btn-sm">Solicitar Proyecto Gradual</button>
     </div>
 
-    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
-      <h3 class="text-secondary">Plan de Evacuación</h3>
-      <p>Realizamos tu plan a medida</p>
-      <button type="button" class="btn btn-secondary btn-sm">Solicitar Plan</button>
+    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm ctn-pto">
+      <h3 class="text-danger">Plan de Evacuación</h3>
+      <p class="text-danger">Realizamos tu plan a medida</p>
+      <button type="button" class="btn btn-danger btn-sm">Solicitar Plan</button>
     </div>
 
   </section>
@@ -111,7 +111,7 @@
   <section id="section3" class="bg-subtle container-fluid py-2">
     <h3 class="text-white">Materiales</h3>
     
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleAutoplaying" class="carousel slide">
   
   <div class="carousel-inner">
     <div class="carousel-item px-2  active">
@@ -167,7 +167,7 @@
   <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
 
   <a href="index.html"
-      class="col-md-1 d-flex link-dark text-decoration-none bg-white rounded p-1 m-1">
+      class="col-md-1 d-flex text-decoration-none bg-white rounded p-1 m-1">
       <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo">
   </a>
 </footer>
