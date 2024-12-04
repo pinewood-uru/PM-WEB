@@ -20,14 +20,14 @@
 
 <main>
   <!-- SECCION 1 -->
-  <section id="section1" class="gap-2">  
+  <section id="section1" class="gap-2 bg-light">  
 
     <!-- NAV  -->
      
-    <nav class="navbar">
+    <nav class="navbar sticky-top bg-light rounded-bottom w-100">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/img/PMfinal.png" class="logonav" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand rounded bg-white" href="#"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,7 +47,7 @@
     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"></path>
   </svg>
                 </button>
-                <a class="nav-link" href="login.html">Iniciar Sesión / Registro</a>
+                <a class="nav-link" href="#">Iniciar Sesión / Registro</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -64,87 +64,41 @@
 
     <!-- BANNER -->
 
-   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
-  <div id="ctn-carousel" class="carousel-inner">
-    <div class="carousel-item active">
-      
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-end py-2 gap-2">
-      <div class="container-fluid h-75">
-      <h1 class="text-white">Gestión <br>
+    <section id="banner" class="container-fluid gap-2 bg-light">
+      <h1 class="text-danger">Gestión <br>
         Proyecto <br>
         Ejecución</h1>
         <h3>Realizamos tu proyecto a medida</h3>
-        <p class="text-white">Soluciones contra incendio a tu medida.</p>
-    </div>
-    <div class="h-50 w-100"><img class="img-fluid rounded" src="/img/PRUEBA DE FUEGO (3).jpeg" alt=""></div>
-  </div>
-
-    </div>
-    <div class="carousel-item">
-      
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-end py-2 gap-2">
-      <div class="container-fluid h-75">
-      <h1 class="text-white">Gestión <br>
-        Proyecto <br>
-        Ejecución</h1>
-        <h3>Realizamos tu proyecto a medida</h3>
-        <p class="text-white">Soluciones contra incendio a tu medida.</p>
-    </div>
-    <div class="h-50 w-100"><img class="img-fluid rounded" src="/img/PRUEBA DE FUEGO (3).jpeg" alt=""></div>
-  </div>
-
-    </div>
-    <div class="carousel-item">
-      
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-end py-2 gap-2">
-      <div class="container-fluid h-75">
-      <h1 class="text-white">Gestión <br>
-        Proyecto <br>
-        Ejecución</h1>
-        <h3>Realizamos tu proyecto a medida</h3>
-        <p class="text-white">Soluciones contra incendio a tu medida.</p>
-    </div>
-    <div class="h-50 w-100"><img class="img-fluid rounded" src="/img/PRUEBA DE FUEGO (3).jpeg" alt=""></div>
-  </div>
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+        <p class="text-dark">Soluciones contra incendio a tu medida.</p>
+        <a href="solicitudform.html" class="btn btn-danger text-white rounded p-2">Solicitar Asesoramiento</a>
+    </section>
         
   </section>
 
   <!-- SECTION2 -->
-  <section id="section2" class="container-fluid d-flex flex-column gap-2 py-2 mt-3 align-items-center">
+  <section id="section2" class="container-fluid d-flex flex-column gap-2 py-2 align-items-center bg-light">
 
     <h2 class="text-dark">Solicita tu proyecto!!!</h2>
 
-    <div class=".bg-dark-subtle my-2 p-2 gap-2 h-50 w-75 rounded align-items-center border shadowpm">
-      <h3>Proyecto Técnico</h3>
+    <div class="md-col-4 bg-danger my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
+      <h3 class="text-white">Proyecto Técnico</h3>
       <p>Proyecto mayores a 750m2</p>
-      <button type="button" class="btn btn-dark btn-sm">Solicitar Proyecto</button>
+      <button type="button" class="btn btn-light btn-sm">Solicitar Proyecto</button>
     </div>
 
-    <div class=".bg-secondary-subtle my-2 p-2 gap-2 h-50 w-75 rounded align-items-center border shadowpm">
+    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
       <h3>Proyecto Técnico Certificación</h3>
       <p>Proyecto menores a 750m2</p>
       <button type="button" class="btn btn-secondary btn-sm">Solicitar Proyecto</button>
     </div>
 
-    <div class=".bg-secondary-subtle my-2 p-2 gap-2 h-50 w-75 rounded align-items-center border shadowpm">
+    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
       <h3>Plan Gradual</h3>
       <p>Extiende tu proyecto</p>
       <button type="button" class="btn btn-secondary btn-sm">Solicitar Proyecto Gradual</button>
     </div>
 
-    <div class=".bg-secondary-subtle my-2 p-2 gap-2 h-50 w-75 rounded align-items-center border shadowpm">
+    <div class="bg-white my-2 p-2 gap-2 h-50 w-75 md-w-50 rounded align-items-center border shadowpm">
       <h3 class="text-secondary">Plan de Evacuación</h3>
       <p>Realizamos tu plan a medida</p>
       <button type="button" class="btn btn-secondary btn-sm">Solicitar Plan</button>
@@ -163,7 +117,7 @@
     <div class="carousel-item px-2  active">
       
       <div class="card border border-0">
-  <img src="/img/PRUEBA DE FUEGO (6).jpeg" class="card-img-top" alt="...">
+  <img src="/PM-WEB/img/PRUEBA DE FUEGO (6).jpeg" class="card-img-top" alt="...">
   <div class="card-body align-items-center d-flex flex-column">
     <h5 class="card-title">Card title</h5>
     <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -175,7 +129,7 @@
     <div class="carousel-item px-2 ">
       
       <div class="card border border-0">
-  <img src="/img/PRUEBA DE FUEGO (6).jpeg" class="card-img-top" alt="...">
+  <img src="/PM-WEB/img/PRUEBA DE FUEGO (2).jpeg).jpeg" class="card-img-top" alt="...">
   <div class="card-body align-items-center d-flex flex-column">
     <h5 class="card-title">Card title</h5>
     <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -187,7 +141,7 @@
     <div class="carousel-item px-2 ">
       
       <div class="card border border-0">
-  <img src="/img/PRUEBA DE FUEGO (6).jpeg" class="card-img-top" alt="...">
+  <img src="/PM-WEB/img/PRUEBA DE FUEGO (4).jpeg).jpeg" class="card-img-top" alt="...">
   <div class="card-body align-items-center d-flex flex-column">
     <h5 class="card-title">Card title</h5>
     <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -209,11 +163,12 @@
 
   </section>
 </main>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
-  <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
+<footer class="sticky-sm-bottom d-flex flex-wrap justify-content-center align-items-between py-3 px-2 mt-2 bg-light w-100">
+  <p class="col-md-4 mb-0 text-danger">© 2024 PM Contra Incendio</p>
 
-  <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none bg-white rounded py-1">
-    <img src="/img/PMfinal.png" class="logonav" alt="logo">
+  <a href="index.html"
+      class="col-md-1 d-flex align-items-between justify-content-center mb-0 mb-md-0 me-md-0 link-dark text-decoration-none bg-white rounded py-1">
+      <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo">
   </a>
 </footer>
   
