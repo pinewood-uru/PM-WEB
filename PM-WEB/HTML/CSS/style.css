@@ -48,11 +48,7 @@ p {
 
 /* CLASES */
 
-.logonav {
-  width: 50px;
-  height: auto;
-  max-height: 50px !important;
-}
+
 
 .shadowpm {
   box-shadow: 0px 8px 36px 0px rgba(30, 30, 30, 0.16);
@@ -110,6 +106,12 @@ p {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
+  }
+
+  .logonav {
+    width: 50px;
+    height: auto;
+    max-height: 50px !important;
   }
   
 }
