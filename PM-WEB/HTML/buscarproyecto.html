@@ -21,7 +21,7 @@
 <body>
 
   <!-- NAV -->
-  <nav class="navbar sticky-top bg-danger rounded-bottom">
+  <nav class="navbar sticky-top bg-light rounded-bottom">
     <div class="container-fluid">
       <a class="navbar-brand rounded bg-white" href="#"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
       <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -64,15 +64,15 @@
     </div>
   </nav>
 
-  <main class="d-flex flex-column gap-2 justify-content-start min-vh-100">
+  <main id="main-buscador" class="min-vh-100 justify-content-center">
     <div class="col-md-7 col-lg-8 px-2">
       <div id="form-proyecto-error"></div>
-      <h4 class="mb-3 text-dark fw-bold pt-2">Buscador de Proyecto</h4>
-      <form class="needs-validation pt-1" novalidate="">
+      <h4 class="mb-3 text-dark fw-bold pt-2 text-center">Buscador de Proyecto</h4>
+      <form class="needs-validation pt-1 col-sm-12 col-md-6 justify-content-center col-12 flex-column align-items-center " novalidate="">
         <div class="row g-3">
 
-          <div class="col-12 align-items-start d-flex flex-column">
-            <label for="input-filtro-token" class="form-label text-danger fw-bold">Token</label>
+          <div class="col-12 align-items-start d-flex flex-column align-items-center">
+            <label for="input-filtro-token" class="form-label text-danger text-center fw-bold">Token</label>
             <div class="input-group has-validation">
               <input type="text" class="form-control " id="input-filtro-token" placeholder="Token" required="">
               <div class="invalid-feedback">
@@ -84,22 +84,22 @@
         </div>
 
         <button class="w-75 btn btn-dark btn-md my-3" type="button" id="form-filtro-submit"
-          value="form-filtro-submit">Buscar</button>
+          value="form-filtro-submit col-md-12 col-sm-12">Buscar</button>
       </form>
     </div>
     <!-- SECTION TABLE PROYECTOS -->
-    <section>
+    <section> 
       <div id="proyectosbytoken">
         
       </div>
     </section>
   </main>
-  <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
+  <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-light">
     <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
 
     <a href="index.html"
       class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none bg-white rounded py-1">
-      <img src="/img/PMfinal.png" class="logonav" alt="logo">
+      <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo">
     </a>
   </footer>
   <script src="../js/filtroproyecto.js" type="module"></script>

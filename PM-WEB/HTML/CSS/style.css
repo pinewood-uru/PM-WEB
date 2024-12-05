@@ -2,7 +2,6 @@
   --primary: #cf1e2a;
   --white: #fdfdff;
   --black: #1e1e1e;
-
 }
 
 * {
@@ -17,7 +16,6 @@
 /* GENERAL */
 
 h1 {
-  
   font-weight: 600 !important;
 }
 
@@ -32,29 +30,17 @@ h3 {
 p {
   font-weight: 400px !important;
 }
-
-#section1 {
-  min-height: 30vh !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-color:var(--white);
-}
-
-#banner{
+s #banner {
   min-height: 50vh !important;
 }
 
 /* CLASES */
-
 
 .logonav {
   width: 80px;
   height: auto;
   max-height: 80px !important;
 }
-
 
 .shadowpm {
   box-shadow: 0px 8px 36px 0px rgba(30, 30, 30, 0.16);
@@ -63,16 +49,19 @@ p {
 /* MOBILE --------------------------------------------- */
 
 @media (max-width: 390px) {
-
-  
   /* FONTS */
 
-  * {
-    text-align: center !important
-        ;
+  section, section>div{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+
+
   }
 
-  input{
+  input {
     text-align: start !important;
   }
 
@@ -104,11 +93,11 @@ p {
     color: var(--primary);
   }
 
-  #ctn-carousel div> *{
+  #ctn-carousel div > * {
     text-align: start !important;
   }
 
-  #section2 div{
+  #section2 div {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -120,17 +109,23 @@ p {
     max-height: 50px !important;
   }
 
-  .ctn-pto{
+  .ctn-pto {
     min-height: 18vh !important;
   }
-  
+
+  .img-card img{
+    max-height: 350px !important;
+    width: 100%;
+    height: auto;
+
+  }
 }
 
 /* DESKTOP -------------------------------------------- */
 
 @media (min-width: 390px) and (max-width: 1440) {
   h1 {
-    font-size: 36px;
+    font-size: 60px !important;
     font-weight: 600;
   }
 
@@ -149,15 +144,24 @@ p {
     font-weight: 400px;
   }
 
-  #section1{
-    min-width: 800px;
-    min-height: 30vh !important;
-  }
-
-  nav{
+  nav {
     max-height: 100px !important;
   }
 
-  
-  
+  #banner {	
+    min-height: 40vh !important;
+}}
+
+#main-login{
+  background-image: url(/PM-WEB/img/pexels-mark-john-hilario-264144764-12939477.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#main-buscador{
+  background-image: url(/PM-WEB/img/pexels-jakubzerdzicki-18509457.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
