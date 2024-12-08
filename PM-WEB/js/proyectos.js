@@ -14,7 +14,8 @@ const listado = data.map((proyecto) =>
         proyecto.direccion,
         proyecto.padron,
         proyecto.estado,
-        proyecto.edt
+        proyecto.edt,
+        proyecto.token
     ).imprimirProyectos()).join("");
     
     imprimir("accordionFlushExample", `<div class="accordion accordion-flush" id="accordionFlushExample">${listado}</div>`)

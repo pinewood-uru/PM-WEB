@@ -8,7 +8,7 @@ export default class Proyecto {
     edt;
     token;
 
-    constructor(id, razonsocial, rut, direccion, padron, estado, edt) {
+    constructor(id, razonsocial, rut, direccion, padron, estado, edt, token) {
         this.id = id;
         this.razonsocial = razonsocial;
         this.rut = rut;
@@ -30,7 +30,7 @@ imprimirProyectos() {
     <div id="flush-collapse${this.id}" class="accordion-collapse collapse"
         data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
-            <!-- TABLA -->
+            
             <table class="table table-bordered border-danger">
                 <thead>
                     <tr>
@@ -55,6 +55,10 @@ imprimirProyectos() {
                         <td class="fw-bold">${this.edt}</td>
                     </tr>
                     <tr>
+                        <th scope="row">Token</th>
+                        <td class="fw-bold">${this.token}</td>
+                    </tr>
+                    <tr>
                         <th><button type="button" class="btn btn-dark btn-modificar" id="btn-modificar" data-id="${this.id}">
                                 Editar Proyecto
                             </button></th>
@@ -72,8 +76,30 @@ imprimirProyectos() {
 </div>`
 }
 
-imprimirProyectosbyID() {
-    return `  `
+imprimirProyectosbytoken() {
+    return `<thead>
+        <tr>
+            <th scope="col" class="bg-secondary text-white w-100" colspan="4">Proyecto ${this.token}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" class="">Dirección</th>
+            <td>${this.direccion}</td>
+        </tr>
+        <tr>
+            <th scope="row">Padrón</th>
+            <td>${this.padron}</td>
+        </tr>
+        <tr>
+            <th scope="row">Estado</th>
+            <td class="fw-bold">${this.estado}</td>
+        </tr>
+        <tr>
+            <th scope="row">Finalización</th>
+            <td class="fw-bold">${this.edt}</td>
+        </tr>
+        </tbody> `
 }}
 
 

@@ -8,11 +8,11 @@ const tokenproyecto = params.get("id");
 
 
 
-const mostrarProyectosbytoken = (data) => {
-    console.log('proyecto', data)
+const mostrarProyectosbytoken = (proyecto) => {
+    console.log('proyecto', proyecto)
 // imprimir("lista-error", "");
 
-const listado = data.map((proyecto) =>
+const listado =
     new Proyecto(
         proyecto.id,
         proyecto.razonsocial,
@@ -22,7 +22,7 @@ const listado = data.map((proyecto) =>
         proyecto.estado,
         proyecto.edt,
         proyecto.token
-    ).imprimirProyectos()).join("");
+    ).imprimirProyectosbytoken();
     
     imprimir("tablaproyecto", `<table class="table table-bordered border-danger" id="tablaproyecto">${listado}</table>
     
@@ -33,15 +33,16 @@ const listado = data.map((proyecto) =>
 // ERROR
 
 const mostrarErrorID = (error) => {
-    imprimir("lista-error", error);
+    imprimir("form-proyecto-error", error);
 };
 
 // BUSCAR PROYECTO
 
 document.getElementById("form-filtro-submit").addEventListener("click", () => {
     const filtrotoken = obtenerValorInput("input-filtro-token");
+    console.log(filtrotoken);
 
-    Request.getProyectobyID({filtrotoken})
+    Request.getproyectobytoken(filtrotoken)
     .then(mostrarProyectosbytoken)
     .catch(mostrarErrorID);
 });
