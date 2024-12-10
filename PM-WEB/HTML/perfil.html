@@ -36,9 +36,9 @@
 
   <body>
     <!-- NAV -->
-    <nav class="navbar sticky-top bg-danger rounded-bottom">
+    <nav class="navbar  bg-danger navbar-expand-sm">
       <div class="container-fluid">
-        <a class="navbar-brand rounded bg-white" href="index.html"
+        <a class="navbar-brand bg-white" href="index.html"
           ><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"
         /></a>
         <button
@@ -106,25 +106,21 @@
       </div>
     </nav>
 
-    <main class="d-flex flex-column gap-2 justify-content-start min-vh-100">
+    <main id="main-perfil" class="d-flex flex-column gap-2 justify-content-center align-items-center min-vh-100 h-100">
       <!-- PROYECTOS -->
-      <section id="perfil">
-        <div
-          class="container-fluid d-flex flex-wrap no-wrap my-2 gap-2 align-items-end"
-        >
-          <h2 class="m-0">Mis Proyectos</h2>
+      <section id="perfil" class="col col-sm-12 col-md-8 p-2 justify-content-center text-center bg-light bg-opacity-50 w-50">
+        <div class="container-fluid" >
+          <h2 class="m-2">Mis Proyectos</h2>
         </div>
 
         <!-- DESPLEGABLE PROYECTOS -->
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush col-sm-12 col-md-12" id="accordionFlushExample">
           <div id="lista-error"></div>
         </div>
 
-        <a
-          class="w-50 btn btn-outline-danger btn-md mt-4"
-          href="solicitudform.html"
-          >Crear Proyecto</a
+        <a class="w-50 btn btn-secondary btn-md mt-4"
+          href="solicitudform.html">Crear Proyecto</a
         >
         <button
           class="w-50 btn btn-dark btn-md mt-4"
@@ -139,19 +135,80 @@
       <!-- LOGOUT -->
     </main>
 
-    <!-- FOOTER -->
-    <footer
-      class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger"
-    >
-      <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
+        <!-- FOOTER -->
 
-      <a
-        href="index.html"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none bg-white rounded py-1"
+        <footer
+        class="container-fluid bg-danger w-100 d-flex justify-content-center py-0 ps-2 m-0"
       >
-        <img src="/img/PMfinal.png" class="logonav" alt="logo" />
-      </a>
-    </footer>
+        <div class="row w-100 p-0">
+          <div class="col-sm-2  col-md-2 border-end border-light p-3">
+            <a
+              href="index.html"
+              class="col-md-3 d-flex text-decoration-none bg-white p-2 justify-content-center"
+            >
+              <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo" />
+            </a>
+            <h3 class="text-light pt-2">PM Materiales contra Incedio</h3>
+            <small class="d-block mb-3 text-light">© 2010–2024</small>
+
+            <h5 class="text-light fw-bold">Enontrarnos aqui</h5>
+            <small class="d-block mb-3 text-light">San Fructuoso 1171</small>
+          </div>
+          <div class="col-sm-2 col-md-2 py-3 mt-2">
+            <h5 class="text-light fw-bold">Servicios</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-light text-decoration-none" href="#"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a class="link-light text-decoration-none" href="#"
+                  >Asesoramiento</a
+                >
+              </li>
+              <li>
+                <a class="link-light text-decoration-none" href="#">Gestión</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-2 py-3 mt-2">
+            <h5 class="text-light fw-bold">Materiales</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-light text-decoration-none" href="#"
+                  >Detección</a
+                >
+              </li>
+              <li>
+                <a class="link-light text-decoration-none" href="#"
+                  >Extintores</a
+                >
+              </li>
+              <li>
+                <a class="link-light text-decoration-none" href="#"
+                  >Señalización</a
+                >
+              </li>
+              <li>
+                <a class="link-light text-decoration-none" href="#"
+                  >Iluminacion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-6 m-0 p-0 justify-content-end">
+            <iframe
+              class="w-100 h-100 col-sm-6"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13092.178948246077!2d-56.1940061!3d-34.8802229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f812928458e67%3A0xfc37b14745e3a428!2sPM%20Materiales%20Contra%20Incendio!5e0!3m2!1ses-419!2suy!4v1733430754492!5m2!1ses-419!2suy"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

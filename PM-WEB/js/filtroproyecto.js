@@ -24,9 +24,7 @@ const listado =
         proyecto.token
     ).imprimirProyectosbytoken();
     
-    imprimir("tablaproyecto", `<table class="table table-bordered border-danger" id="tablaproyecto">${listado}</table>
-    
-  </table>`)
+    imprimir("tablaproyecto", `<table class="table table-bordered border-danger" id="tablaproyecto">${listado}</table>`)
 
 }
 

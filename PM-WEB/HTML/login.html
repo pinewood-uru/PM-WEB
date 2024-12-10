@@ -22,12 +22,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Javanese:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <main id="main-login" class="d-flex flex-column gap-2 justify-content-between min-vh-100 align-items-center">
-    <!-- NAV -->
-    <nav class="navbar sticky-top bg-light rounded-bottom w-100">
+<body> 
+  
+  <!-- NAV -->
+    <nav class="navbar  bg-light  w-100 navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand rounded bg-white" href="index.html"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
+          <a class="navbar-brand bg-white" href="index.html"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -62,10 +62,13 @@
           </div>
         </div>
       </nav>
+    
+      <main id="main-login" class="d-flex flex-column justify-content-center min-vh-100 align-items-center m-0">
+   
   
 
     <!-- LOGIN -->
-        <div class="col-md-7 col-lg-8 p-2 shadowpm rounded m-2 bg-light bg-opacity-75">
+        <div class="col-md-7 col-lg-8 p-2 shadowpm m-2 bg-light bg-opacity-75">
             <h4 class="mb-3 text-danger fw-bold pt-2">Login</h4>
             <form id="formlogin" class="needs-validation pt-1" novalidate="">
                 <div class="row g-3">
@@ -91,16 +94,16 @@
             <p class="my-2">No tienes cuenta? <a href="registro.html">Registrate</a></p>
         </div>
     
-    <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-center align-items-between py-3 px-2 mt-2 bg-light w-100">
+
+</main>
+    <footer class="d-flex flex-wrap justify-content-center align-items-between py-3 px-2 bg-light w-100">
         <p class="col-md-4 mb-0 text-danger">© 2024 PM Contra Incendio</p>
 
         <a href="index.html"
-            class="col-md-1 d-flex align-items-between justify-content-center mb-0 mb-md-0 me-md-0 link-dark text-decoration-none bg-white rounded py-1">
+            class="col-md-1 d-flex align-items-between justify-content-center mb-0 mb-md-0 me-md-0 link-dark text-decoration-none bg-light py-1">
             <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo">
         </a>
     </footer>
-</main>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

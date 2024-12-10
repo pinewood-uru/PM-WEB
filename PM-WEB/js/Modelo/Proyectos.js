@@ -20,9 +20,9 @@ export default class Proyecto {
     }
 
 imprimirProyectos() {
-    return `  <div class="accordion-item">
+    return `  <div class="accordion-item col-sm-12 col-md-8">
     <h3 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button collapsed col-sm-12 col-md-8" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapse${this.id}" aria-expanded="false" aria-controls="flush-collapse${this.id}">
             Proyecto ${this.id}
         </button>
@@ -39,27 +39,27 @@ imprimirProyectos() {
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" class="">Dirección</th>
+                        <th class="fw-normal" scope="row"">Dirección</th>
                         <td>${this.direccion}</td>
                     </tr>
                     <tr>
-                        <th scope="row">Padrón</th>
+                        <th class="fw-normal" scope="row">Padrón</th>
                         <td>${this.padron}</td>
                     </tr>
                     <tr>
-                        <th scope="row">Estado</th>
-                        <td class="fw-bold">${this.estado}</td>
+                        <th class="fw-normal" scope="row">Estado</th>
+                        <td class="">${this.estado}</td>
                     </tr>
                     <tr>
-                        <th scope="row">Finalización</th>
-                        <td class="fw-bold">${this.edt}</td>
+                        <th class="fw-normal" scope="row">Finalización</th>
+                        <td class="">${this.edt}</td>
                     </tr>
                     <tr>
-                        <th scope="row">Token</th>
-                        <td class="fw-bold">${this.token}</td>
+                        <th class="fw-normal" scope="row">Token</th>
+                        <td class="">${this.token}</td>
                     </tr>
                     <tr>
-                        <th><button type="button" class="btn btn-dark btn-modificar" id="btn-modificar" data-id="${this.id}">
+                        <th><button type="button" class="btn btn-warning btn-modificar" id="btn-modificar" data-id="${this.id}">
                                 Editar Proyecto
                             </button></th>
                         <td>
