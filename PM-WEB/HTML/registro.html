@@ -23,54 +23,54 @@
 </head>
 
 <body>
-    <main class="d-flex flex-column gap-2 justify-content-center min-vh-100  m-0">
-          <!-- NAV -->
-    <nav class="navbar  bg-danger  navbar-expand-sm">
-        <div class="container-fluid">
-          <a class="navbar-brand bg-white" href="index.html"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <!-- OFF CANVAS -->
-  
-          <div class="offcanvas offcanvas-end bg bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h3 class="offcanvas-title" id="offcanvasNavbarLabel">PM - Contra incendio</h3>
-              <button type="button" class="btn-close btn-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                
-                <li class="nav-item d-flex no-wrap gap-2">
-                  <button type="button" class="btn btn-danger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"></path>
-    </svg>
-                  </button>
-                  <a class="nav-link" href="login.html">Iniciar Sesión / Registro</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="buscarproyecto.html">Buscar Proyecto</a>
-                </li>
-                </li>
-              </ul>
-            </div>
+    <!-- NAV -->
+    <nav class="navbar  bg-light  w-100 navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand bg-white" href="index.html"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- OFF CANVAS -->
+
+        <div class="offcanvas offcanvas-end bg bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">PM - Contra incendio</h3>
+            <button type="button" class="btn-close btn-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              
+              <li class="nav-item d-flex no-wrap gap-2">
+                <button type="button" class="btn btn-danger">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"></path>
+  </svg>
+                </button>
+                <a class="nav-link" href="login.html">Iniciar Sesión / Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buscarproyecto.html"> Buscar Proyecto</a>
+              </li>
+              
+            </ul>
           </div>
         </div>
-      </nav>
-      <h1>Bienvenido a PM</h1>
+      </div>
+    </nav>
+    <main id="main-register" class="min-vh-100 justify-content-center align-items-start text-center d-flex flex-wrap  m-0">
+      <h1 class="col-12 text-light">Bienvenido a PM</h1>
  
-        <div class="col-md-7 col-lg-8 p-2 shadowpm bg-dark mx-3 gap-2">
-            <h4 class="mb-3 text-white fw-bold pt-2">Registro</h4>
+        <div class="col-md-6 col-sm-12 offset-md-3 p-2 bg-dark mx-3 gap-2 jus">
+            <h4 class="mb-3 text-white pt-2">Registro</h4>
             <form class="needs-validation pt-1" novalidate="">
-                <div class="row g-3">
+                <div class="row g-3 w-75">
                     
                     <div class="col-sm-6 align-items-start d-flex flex-column">
-                        <label for="nombre" class="form-label text-white fw-bold">Nombre</label>
+                        <label for="nombre" class="form-label text-white">Nombre</label>
                         <input type="text" class="form-control " id="form-register-nombre" placeholder="Juan" value="" required="">
                         <div class="invalid-feedback">
                             Nombre es requerido
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="col-sm-6 align-items-start d-flex flex-column">
-                        <label for="apellido" class="form-label text-white fw-bold">Apellido</label>
+                        <label for="apellido" class="form-label text-white">Apellido</label>
                         <input type="text" class="form-control " id="form-register-apellido" placeholder="Perez" value="" required="">
                         <div class="invalid-feedback">
                             Apellido es requerido
@@ -87,14 +87,14 @@
 
 
                     <div class="col-12 align-items-start d-flex flex-column">
-                        <label for="email" class="form-label text-white fw-bold">Email</label>
+                        <label for="email" class="form-label text-white">Email</label>
                         <input type="email" class="form-control" id="form-register-email" placeholder="juan@perez.com">
                         <div class="invalid-feedback">
                             Email es requerido
                         </div>
                     </div>
 
-                    <div class="col-12 align-items-start d-flex flex-column text-white fw-bold">
+                    <div class="col-12 align-items-start d-flex flex-column text-white">
                         <label for="form-register-password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="form-register-password">
                       </div>
@@ -106,14 +106,14 @@
             <p class="my-2 text-white">Ya tienes cuenta? <a href="login.html" class="text-white">Iniciar Sesión</a></p>
         </div>
     </main>
-    <footer class="sticky-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
-        <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
+    <footer class="d-flex flex-wrap justify-content-center align-items-between py-3 px-2 bg-light w-100">
+      <p class="col-md-4 mb-0 text-danger">© 2024 PM Contra Incendio</p>
 
-        <a href="index.html"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none bg-white  py-1">
-            <img src="/img/PMfinal.png" class="logonav" alt="logo">
-        </a>
-    </footer>
+      <a href="index.html"
+          class="col-md-1 d-flex align-items-between justify-content-center mb-0 mb-md-0 me-md-0 link-dark text-decoration-none bg-light py-1">
+          <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo">
+      </a>
+  </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

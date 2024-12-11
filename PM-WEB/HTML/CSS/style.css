@@ -50,8 +50,6 @@
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
-
-
   }
 
   input {
@@ -73,6 +71,10 @@
 
   p {
     font-size: 14px !important;
+  }
+
+  .navbar li>a{
+    color: var(--primary)!important;
   }
 
   #section1 {
@@ -104,6 +106,42 @@
     height: auto;
 
   }
+
+  #ctn-proyectos div:nth-child(1){
+    background-image: url(/PM-WEB/img/pexels-shvetsa-5965210.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--white);
+  
+  }
+  
+    #ctn-proyectos div:nth-child(2){
+      background-image: url(/PM-WEB/img/pexels-athena-2962028.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: var(--white);
+  
+  }
+  
+      #ctn-proyectos div:nth-child(3){
+        background-image: url(/PM-WEB/img/pexels-tibszabo-13756513.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: var(--white);
+   
+      }
+  
+        #ctn-proyectos div:nth-child(4){
+          background-image: url(/PM-WEB/img/pexels-onur-uslu-363018927-14529288.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          color: var(--white);
+     
+        }
 }
 
 /* DESKTOP -------------------------------------------- */
@@ -164,3 +202,56 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#ctn-proyectos div:nth-child(1):hover{
+  background-image: url(/PM-WEB/img/pexels-shvetsa-5965210.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white);
+
+}
+
+  #ctn-proyectos div:nth-child(2):hover{
+    background-image: url(/PM-WEB/img/pexels-athena-2962028.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--white);
+
+}
+
+    #ctn-proyectos div:nth-child(3):hover{
+      background-image: url(/PM-WEB/img/pexels-tibszabo-13756513.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: var(--white);
+ 
+    }
+
+      #ctn-proyectos div:nth-child(4):hover{
+        background-image: url(/PM-WEB/img/pexels-onur-uslu-363018927-14529288.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: var(--white);
+   
+      }
+
+      #main-proyectosctn>div:nth-child(1){
+        background-image: url(/PM-WEB/img/pexels-tibszabo-13756513.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 35vh !important;
+
+      }
+
+      #main-register{
+        background-color: var(--white) 50% !important;
+        background: white url(/PM-WEB/img/pexels-cottonbro-5082561.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
