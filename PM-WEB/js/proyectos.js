@@ -28,6 +28,8 @@ const mostrarError = (error) => {
     imprimir("lista-error", error);
 };
 
+// EVENTOS
+
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('btn-eliminar')) {
         const id = event.target.getAttribute('data-id');
@@ -45,7 +47,7 @@ document.addEventListener('click', (event) => {
         Request.modificarproyecto(id).then(() => {
             
             document.location.replace("modificarproyecto.html?id=" + id);
-            // mostrarlistaClientes()
+            imprimirProyectos()
         }).catch(mostrarError);
     }});
 

@@ -10,7 +10,7 @@ console.log(idproyecto);
 if (idproyecto != undefined) {
     Request.getproyectoById(idproyecto)
     .then((data) => {
-        const { razonsocial, rut, direccion, padron, estado, edt, token} = data;
+        const { razonsocial, id, rut, direccion, padron, estado, edt, token} = data;
         console.log(data)
         document.querySelector("#razonsocial").value = razonsocial;
         document.querySelector("#rut").value = rut;
@@ -27,11 +27,7 @@ if (idproyecto != undefined) {
     });
 }
 
-// ALEATORIO
 
-// generarTokenAleatorio() {
-//     return Math.random().toString(16).substr(2, 8);
-// }
 
 document.getElementById("form-proyecto-submit").addEventListener("click", ()=>{
 
@@ -59,6 +55,9 @@ const body = JSON.stringify({
     token,
 
 });
+
+// MODIFICAR PROYECTO
+
 idproyecto ? Request.modificarproyecto(idproyecto, body).then(()=> {
     document.location.replace("perfil.html");
 }).then(() => {

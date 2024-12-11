@@ -142,6 +142,11 @@
           color: var(--white);
      
         }
+
+        #perfil{
+          max-height: 8X  0vh !important;
+          min-width: 90vw !important;
+        }
 }
 
 /* DESKTOP -------------------------------------------- */
@@ -249,8 +254,14 @@
       }
 
       #main-register{
-        background-color: var(--white) 50% !important;
         background: white url(/PM-WEB/img/pexels-cottonbro-5082561.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      #main-modificar{
+        background: white url(/PM-WEB/img/pexels-grzegorz-szczepocki-1594078-3172635.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

@@ -23,60 +23,64 @@
 </head>
 
 <body>
-
   <!-- NAV -->
-  <nav class="navbar  bg-danger  navbar-expand-sm">
+  <nav class="navbar  bg-light  w-100 navbar-expand-sm">
     <div class="container-fluid">
-      <a class="navbar-brand bg-white" href="#"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
-      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <a class="navbar-brand bg-white" href="index.html"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- OFF CANVAS -->
 
-      <div class="offcanvas offcanvas-end bg bg-white" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end bg bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h3 class="offcanvas-title" id="offcanvasNavbarLabel">PM - Contra incendio</h3>
           <button type="button" class="btn-close btn-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
+            
             <li class="nav-item d-flex no-wrap gap-2">
-              <button type="button" class="btn btn-danger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
-                  </path>
-                </svg>
-              </button>
-              <a class="nav-link" href="login.html">Iniciar Sesión / Registro</a>
-            </li>
+                <a class="nav-link" href="login.html"
+                  ><button type="button" class="btn btn-danger">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                      ></path>
+                    </svg>
+                  </button>
+                </a>
+              </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="buscarproyecto.html"> Buscar Proyecto</a>
             </li>
-            </li>
+            
           </ul>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="d-flex flex-column gap-2 justify-content-start min-vh-100">
+  <main id="main-modificar" class="justify-content-center align-items-start text-center d-flex flex-wrap  m-0">
     <div class="col-md-7 col-lg-8 px-2">
       <div id="form-proyecto-error"></div>
-      <h4 class="mb-3 text-dark fw-bold pt-2">Solicitud de Proyecto</h4>
+      <h4 class="mb-3 text-dark pt-2">Solicitud de Proyecto</h4>
       <form class="needs-validation pt-1" novalidate="">
         <div class="row g-3">
 
           <div class="col-12 align-items-start d-flex flex-column">
-            <label for="razonsocial" class="form-label text-danger fw-bold">Razón Social</label>
+            <label for="razonsocial" class="form-label text-light">Razón Social</label>
             <div class="input-group has-validation">
               <input type="text" class="form-control " id="razonsocial" placeholder="Razón social" required="">
               <div class="invalid-feedback">
@@ -86,7 +90,7 @@
           </div>
 
           <div class="col-md-3 align-items-start d-flex flex-column">
-            <label for="rut" class="form-label text-danger fw-bold">RUT</label>
+            <label for="rut" class="form-label text-light">RUT</label>
             <input type="text" class="form-control " id="rut" placeholder="" required="">
             <div class="invalid-feedback">
               Número de Rut es requerido
@@ -95,7 +99,7 @@
 
 
           <div class="col-12 align-items-start d-flex flex-column">
-            <label for="direccion" class="form-label text-danger fw-bold">Dirección</label>
+            <label for="direccion" class="form-label text-light">Dirección</label>
             <input type="text" class="form-control " id="direccion" placeholder="18 de Julio 1234" required="">
             <div class="invalid-feedback">
               Dirección es requrida
@@ -103,7 +107,7 @@
           </div>
 
           <div class="col-12 align-items-start d-flex flex-column">
-            <label for="padron" class="form-label text-danger fw-bold">Padrón</label>
+            <label for="padron" class="form-label text-light">Padrón</label>
             <input type="text" class="form-control " id="padron" placeholder="1234" required="">
             <div class="invalid-feedback">
               Ingresar padrón
@@ -136,14 +140,79 @@
           value="form-proyecto-submit">Continuar</button>
       </form>
     </div>
-  </main>
-  <footer class="sticky-sm-bottom d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mt-2 bg-danger">
-    <p class="col-md-4 mb-0 text-white">© 2024 PM Contra Incendio</p>
+  </main><!-- FOOTER -->
 
-    <a href="index.html"
-      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none bg-white py-1">
-      <img src="/img/PMfinal.png" class="logonav" alt="logo">
-    </a>
+  <footer
+    class="container-fluid bg-danger w-100 d-flex justify-content-center py-0 ps-2 m-0"
+  >
+    <div class="row w-100 p-0">
+      <div class="col-sm-2  col-md-2 border-end border-light p-3">
+        <a
+          href="index.html"
+          class="col-md-3 d-flex text-decoration-none bg-white p-2 justify-content-center"
+        >
+          <img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo" />
+        </a>
+        <h3 class="text-light pt-2">PM Materiales contra Incedio</h3>
+        <small class="d-block mb-3 text-light">© 2010–2024</small>
+
+        <h5 class="text-light fw-bold">Enontrarnos aqui</h5>
+        <small class="d-block mb-3 text-light">San Fructuoso 1171</small>
+      </div>
+      <div class="col-sm-2 col-md-2 py-3 mt-2">
+        <h5 class="text-light fw-bold">Servicios</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-light text-decoration-none" href="#"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a class="link-light text-decoration-none" href="#"
+              >Asesoramiento</a
+            >
+          </li>
+          <li>
+            <a class="link-light text-decoration-none" href="#">Gestión</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 col-md-2 py-3 mt-2">
+        <h5 class="text-light fw-bold">Materiales</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-light text-decoration-none" href="#"
+              >Detección</a
+            >
+          </li>
+          <li>
+            <a class="link-light text-decoration-none" href="#"
+              >Extintores</a
+            >
+          </li>
+          <li>
+            <a class="link-light text-decoration-none" href="#"
+              >Señalización</a
+            >
+          </li>
+          <li>
+            <a class="link-light text-decoration-none" href="#"
+              >Iluminacion</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 m-0 p-0 justify-content-end">
+        <iframe
+          class="w-100 h-100 col-sm-6"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13092.178948246077!2d-56.1940061!3d-34.8802229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f812928458e67%3A0xfc37b14745e3a428!2sPM%20Materiales%20Contra%20Incendio!5e0!3m2!1ses-419!2suy!4v1733430754492!5m2!1ses-419!2suy"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
   </footer>
   <script src="../js/formproyecto.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
