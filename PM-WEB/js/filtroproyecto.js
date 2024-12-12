@@ -9,9 +9,6 @@ const tokenproyecto = params.get("id");
 
 
 const mostrarProyectosbytoken = (proyecto) => {
-    console.log('proyecto', proyecto)
-// imprimir("lista-error", "");
-
 const listado =
     new Proyecto(
         proyecto.id,
@@ -40,7 +37,7 @@ document.getElementById("form-filtro-submit").addEventListener("click", () => {
     const filtrotoken = obtenerValorInput("input-filtro-token");
     console.log(filtrotoken);
 
-    Request.getproyectobytoken(filtrotoken)
+    Request.getProyectobytoken(filtrotoken)
     .then(mostrarProyectosbytoken)
     .catch(mostrarErrorToken);
 });

@@ -74,8 +74,8 @@ static getProyectobytoken(token) {
     .catch(manejarErrores)
 }
 
-static getProyectoByID(id) {
-  return fetch(obtenerUrl(`proyecto/${id}`), { headers })
+static getproyectobyid(id) {
+  return fetch(obtenerUrl(`proyectoid/${id}`), { headers })
     .then(procesarRespuesta)
     .catch(manejarErrores)
 }

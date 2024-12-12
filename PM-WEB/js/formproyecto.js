@@ -8,9 +8,9 @@ const idproyecto = params.get("id");
 
 console.log(idproyecto);
 if (idproyecto != undefined) {
-    Request.getProyectoByID(idproyecto)
+    Request.getproyectobyid(idproyecto)
     .then((data) => {
-        const { razonsocial, rut, direccion, padron, estado, edt, token} = data;
+        const { razonsocial, id, rut, direccion, padron, estado, edt, token} = data;
         console.log(data)
         document.querySelector("#razonsocial").value = razonsocial;
         document.querySelector("#rut").value = rut;
