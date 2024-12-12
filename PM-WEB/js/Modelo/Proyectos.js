@@ -93,11 +93,11 @@ imprimirProyectosbytoken() {
         </tr>
         <tr>
             <th scope="row">Estado</th>
-            <td class="fw-bold">${this.estado}</td>
+            <td class="">${this.estado}</td>
         </tr>
         <tr>
             <th scope="row">Finalización</th>
-            <td class="fw-bold">${this.edt}</td>
+            <td class="">${this.edt}</td>
         </tr>
         </tbody> `
 }}

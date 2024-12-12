@@ -68,7 +68,7 @@ idproyecto ? Request.modificarproyecto(idproyecto, body).then(()=> {
 }) :
 Request.postproyecto(body)
     .then(()=> {
-        document.location.replace("perfil.html");
+        document.location.replace("buscarproyecto.html");
     }).then(() => {
         alert("Se ha ingresado con exito");
     })

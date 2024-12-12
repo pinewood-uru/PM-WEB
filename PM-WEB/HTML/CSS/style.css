@@ -77,6 +77,12 @@
     color: var(--primary)!important;
   }
 
+  main{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
   #section1 {
     min-height: 400px;
   }
@@ -147,6 +153,13 @@
           max-height: 8X  0vh !important;
           min-width: 90vw !important;
         }
+
+        #main-solicitud{
+          display: flex;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
 }
 
 /* DESKTOP -------------------------------------------- */
@@ -186,6 +199,8 @@
 
 }
 
+
+
 #main-login{
   background-image: url(/PM-WEB/img/pexels-mark-john-hilario-264144764-12939477.jpg);
   background-size: cover;
@@ -194,7 +209,7 @@
 }
 
 .main-buscador{
-  background-image: url(/PM-WEB/img/pexels-jakubzerdzicki-18509457.jpg);
+  background-image: url(/PM-WEB/img/pexels-onur-uslu-363018927-14529288.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,4 +280,25 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+      }
+
+      #main-solicitud{
+        background: white url(/PM-WEB/img/pexels-onur-uslu-363018927-14529288.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+
+      /* ANIMACIONES -------------------------------------------- */
+
+      video {
+        object-fit: cover;
+        width: 100vw;
+        height: 99vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        position: absolute 0 0;
+        z-index: -1;
       }

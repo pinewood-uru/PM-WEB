@@ -24,7 +24,7 @@
 
 <body>
   <!-- NAV -->
-  <nav class="navbar  bg-light  w-100 navbar-expand-sm">
+  <nav class="navbar  bg-light  w-100 navbar-expand-sm align-items-start d-flex">
     <div class="container-fluid">
       <a class="navbar-brand bg-white" href="index.html"><img src="/PM-WEB/img/PMfinal.png" class="logonav" alt="logo"></a>
       <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -39,8 +39,13 @@
           <button type="button" class="btn-close btn-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="buscarproyecto.html"> Buscar Proyecto</a>
+            </li>
             <li class="nav-item d-flex no-wrap gap-2">
                 <a class="nav-link" href="perfil.html"
                   ><button type="button" class="btn btn-danger">
@@ -59,12 +64,8 @@
                   </button>
                 </a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="buscarproyecto.html"> Buscar Proyecto</a>
-            </li>
+            
+           
             
           </ul>
         </div>
@@ -116,7 +117,7 @@
             <p class="my-2 text-white">Ya tienes cuenta? <a href="login.html" class="text-white">Iniciar Sesión</a></p>
         </div>
     </main>
-    <footer class="d-flex flex-wrap justify-content-center align-items-between py-3 px-2 bg-light w-100">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 px-2 bg-light w-100 gap-2">
       <p class="col-md-4 mb-0 text-danger">© 2024 PM Contra Incendio</p>
 
       <a href="index.html"
