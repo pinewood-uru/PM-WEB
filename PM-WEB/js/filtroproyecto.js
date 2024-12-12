@@ -30,7 +30,7 @@ const listado =
 
 // ERROR
 
-const mostrarErrorID = (error) => {
+const mostrarErrorToken = (error) => {
     imprimir("form-proyecto-error", error);
 };
 
@@ -42,5 +42,5 @@ document.getElementById("form-filtro-submit").addEventListener("click", () => {
 
     Request.getproyectobytoken(filtrotoken)
     .then(mostrarProyectosbytoken)
-    .catch(mostrarErrorID);
+    .catch(mostrarErrorToken);
 });

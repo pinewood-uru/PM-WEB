@@ -68,13 +68,13 @@ export class Request {
 
 // GET PROYECTO BY TOKEN
 
-static getproyectobytoken(token) {
+static getProyectobytoken(token) {
   return fetch(obtenerUrl(`proyecto/${token}`), { headers })
     .then(procesarRespuesta)
     .catch(manejarErrores)
 }
 
-static getproyectoById(id) {
+static getProyectoByID(id) {
   return fetch(obtenerUrl(`proyecto/${id}`), { headers })
     .then(procesarRespuesta)
     .catch(manejarErrores)

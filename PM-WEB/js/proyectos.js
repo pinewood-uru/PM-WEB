@@ -47,7 +47,6 @@ document.addEventListener('click', (event) => {
         Request.modificarproyecto(id).then(() => {
             
             document.location.replace("modificarproyecto.html?id=" + id);
-            imprimirProyectos()
         }).catch(mostrarError);
     }});
 

@@ -8,9 +8,9 @@ const idproyecto = params.get("id");
 
 console.log(idproyecto);
 if (idproyecto != undefined) {
-    Request.getproyectoById(idproyecto)
+    Request.getProyectoByID(idproyecto)
     .then((data) => {
-        const { razonsocial, id, rut, direccion, padron, estado, edt, token} = data;
+        const { razonsocial, rut, direccion, padron, estado, edt, token} = data;
         console.log(data)
         document.querySelector("#razonsocial").value = razonsocial;
         document.querySelector("#rut").value = rut;
@@ -64,7 +64,7 @@ idproyecto ? Request.modificarproyecto(idproyecto, body).then(()=> {
     alert("Se ha ingresado con exito");
 })
 .catch((error) => {
-    imprimir("form-proyecto-error", error);
+    imprimir("nuevo-proyecto-error", error);
 }) :
 Request.postproyecto(body)
     .then(()=> {
